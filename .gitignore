@@ -1,0 +1,63 @@
+# Ignore Python virtual environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Ignore large data files (keep only essential ones)
+*.zip
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx
+*.xml
+*.dbf.xml
+
+# Ignore temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# Keep only the working version of the map
+html_map/script_address_based.js
+html_map/script_complete.js
+html_map/script_debug.js
+html_map/script_enhanced.js
+html_map/script_fixed_csv.js
+html_map/script_fixed.js
+html_map/script_hybrid.js
+html_map/script_simple_account.js
+html_map/script.js
+
+# Keep only essential data files
+html_map/data/Towns.geojson
+html_map/data/Taxparcelassessor.geojson

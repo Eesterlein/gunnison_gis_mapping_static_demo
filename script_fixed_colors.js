@@ -12,30 +12,30 @@ class GunnisonCountyMap {
         this.colorBy = 'SumOfACTUALVALUE'; // Default to value since most parcels have this
         this.colorSchemes = {
             'ATTRIBUTESUBTYPE': {
-                'TYPICAL OR AVERAGE': '#98A37D',
-                'LIMITED OR BELOW AVERAGE': '#B89A5D',
-                'SCENIC OR ABOVE AVERAGE': '#224428',
-                'EXCELLENT OR SUPERIOR': '#1A3A1F'
+                'LIMITED OR BELOW AVERAGE': '#FFD700',  // Bright yellow
+                'TYPICAL OR AVERAGE': '#FFA500',        // Orange
+                'SCENIC OR ABOVE AVERAGE': '#FF6347',   // Tomato red
+                'EXCELLENT OR SUPERIOR': '#DC143C'      // Crimson red
             },
             'EXT CONDITION': {
-                'Average': '#98A37D',
-                'Good': '#224428',
-                'Fair': '#B89A5D',
-                'Poor': '#8B4513',
-                'Excellent': '#1A3A1F',
-                'Very Good': '#224428'
+                'Poor': '#FFD700',       // Bright yellow
+                'Fair': '#FFA500',       // Orange
+                'Average': '#FF6347',    // Tomato red
+                'Good': '#DC143C',       // Crimson red
+                'Very Good': '#B22222',  // Fire brick
+                'Excellent': '#8B0000'   // Dark red
             },
             'SumOfACTUALVALUE': {
-                'Low': '#F5F5F5',        // Very light gray - almost invisible
-                'Medium': '#B89A5D',     // Gold/brown
-                'High': '#224428',       // Dark forest green
-                'Very High': '#FF6B6B'   // Bright red - very distinguishable!
+                'Low': '#FFD700',        // Bright yellow
+                'Medium': '#FFA500',     // Orange
+                'High': '#FF6347',       // Tomato red
+                'Very High': '#DC143C'   // Crimson red
             },
             'TOTALACTUA': { // Parcel data values
-                'Low': '#F5F5F5',        // Very light gray - almost invisible
-                'Medium': '#B89A5D',     // Gold/brown
-                'High': '#224428',       // Dark forest green
-                'Very High': '#FF6B6B'   // Bright red - very distinguishable!
+                'Low': '#FFD700',        // Bright yellow
+                'Medium': '#FFA500',     // Orange
+                'High': '#FF6347',       // Tomato red
+                'Very High': '#DC143C'   // Crimson red
             }
         };
         

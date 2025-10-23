@@ -1,0 +1,271 @@
+/* Gunnison County Color Palette */
+:root {
+    --primary-green: #224428;
+    --light-green: #98A37D;
+    --cream-bg: #F7F5EE;
+    --muted-brown: #B89A5D;
+    --white: #FFFFFF;
+    --dark-gray: #333333;
+    --light-gray: #E5E5E5;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cream-bg);
+    color: var(--dark-gray);
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--primary-green);
+    color: var(--white);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-placeholder {
+    font-size: 24px;
+    background-color: var(--light-green);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Map Container */
+#map {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Control Panel */
+.control-panel {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.control-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--light-gray);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--dark-gray);
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.control-group select:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+/* Legend */
+.legend {
+    background-color: var(--white);
+    border-radius: 6px;
+    padding: 15px;
+    border: 1px solid var(--light-gray);
+}
+
+.legend h3 {
+    color: var(--primary-green);
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 10px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.legend-label {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+/* Loading Indicator */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(247, 245, 238, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    font-size: 16px;
+    color: var(--primary-green);
+}
+
+.loading.hidden {
+    display: none;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--light-gray);
+    border-top: 4px solid var(--primary-green);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Leaflet Overrides */
+.leaflet-popup-content-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.leaflet-popup-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.leaflet-popup-tip {
+    background-color: var(--white);
+}
+
+/* Popup Styling */
+.popup-content {
+    min-width: 200px;
+}
+
+.popup-title {
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.popup-field {
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-label {
+    font-weight: 600;
+    color: var(--dark-gray);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.popup-value {
+    color: var(--dark-gray);
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .control-panel {
+        position: fixed;
+        top: 70px;
+        right: 10px;
+        left: 10px;
+        max-width: none;
+        min-width: auto;
+    }
+    
+    .header h1 {
+        font-size: 18px;
+    }
+    
+    .logo-placeholder {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+/* Custom Leaflet Control Styling */
+.leaflet-control-zoom a {
+    background-color: var(--white);
+    color: var(--primary-green);
+    border: 1px solid var(--light-gray);
+}
+
+.leaflet-control-zoom a:hover {
+    background-color: var(--light-green);
+    color: var(--white);
+}
+
+.leaflet-control-attribution {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--dark-gray);
+    font-size: 11px;
+}

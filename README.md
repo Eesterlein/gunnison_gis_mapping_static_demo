@@ -12,7 +12,7 @@ An interactive web map visualizing property attributes across Gunnison County, C
 
 ## Live Demo
 
-🌐 **[View Live Demo](https://your-username.github.io/gis_mapping_comparison/)**
+🌐 **[View Live Demo](https://eesterlein.github.io/gunnison_gis_mapping_static_demo/)**
 
 ## Data Sources
 

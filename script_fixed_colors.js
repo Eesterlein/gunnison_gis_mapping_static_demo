@@ -12,30 +12,30 @@ class GunnisonCountyMap {
         this.colorBy = 'SumOfACTUALVALUE'; // Default to value since most parcels have this
         this.colorSchemes = {
             'ATTRIBUTESUBTYPE': {
-                'LIMITED OR BELOW AVERAGE': '#FFD700',  // Bright yellow
-                'TYPICAL OR AVERAGE': '#FFA500',        // Orange
-                'SCENIC OR ABOVE AVERAGE': '#FF6347',   // Tomato red
-                'EXCELLENT OR SUPERIOR': '#DC143C'      // Crimson red
+                'LIMITED OR BELOW AVERAGE': '#d0e3f0',  // Light blue
+                'TYPICAL OR AVERAGE': '#8fb6d0',        // Medium blue
+                'SCENIC OR ABOVE AVERAGE': '#5a7ebf',   // Dark blue
+                'EXCELLENT OR SUPERIOR': '#2d3a8c'      // Deep purple-blue
             },
             'EXT CONDITION': {
-                'Poor': '#FFD700',       // Bright yellow
-                'Fair': '#FFA500',       // Orange
-                'Average': '#FF6347',    // Tomato red
-                'Good': '#DC143C',       // Crimson red
-                'Very Good': '#B22222',  // Fire brick
-                'Excellent': '#8B0000'   // Dark red
+                'Poor': '#d0e3f0',       // Light blue
+                'Fair': '#8fb6d0',       // Medium blue
+                'Average': '#5a7ebf',    // Dark blue
+                'Good': '#2d3a8c',       // Deep purple-blue
+                'Very Good': '#1e2a5e',  // Darker purple-blue
+                'Excellent': '#0f1a3f'  // Darkest purple-blue
             },
             'SumOfACTUALVALUE': {
-                'Low': '#FFD700',        // Bright yellow
-                'Medium': '#FFA500',     // Orange
-                'High': '#FF6347',       // Tomato red
-                'Very High': '#DC143C'   // Crimson red
+                'Low': '#d0e3f0',        // Light blue
+                'Medium': '#8fb6d0',     // Medium blue
+                'High': '#5a7ebf',       // Dark blue
+                'Very High': '#2d3a8c'   // Deep purple-blue
             },
             'TOTALACTUA': { // Parcel data values
-                'Low': '#FFD700',        // Bright yellow
-                'Medium': '#FFA500',     // Orange
-                'High': '#FF6347',       // Tomato red
-                'Very High': '#DC143C'   // Crimson red
+                'Low': '#d0e3f0',        // Light blue
+                'Medium': '#8fb6d0',     // Medium blue
+                'High': '#5a7ebf',       // Dark blue
+                'Very High': '#2d3a8c'   // Deep purple-blue
             }
         };
         

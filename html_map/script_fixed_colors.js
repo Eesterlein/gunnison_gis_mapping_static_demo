@@ -12,30 +12,30 @@ class GunnisonCountyMap {
         this.colorBy = 'SumOfACTUALVALUE'; // Default to value since most parcels have this
         this.colorSchemes = {
             'ATTRIBUTESUBTYPE': {
-                'TYPICAL OR AVERAGE': '#98A37D',
-                'LIMITED OR BELOW AVERAGE': '#B89A5D',
-                'SCENIC OR ABOVE AVERAGE': '#224428',
-                'EXCELLENT OR SUPERIOR': '#1A3A1F'
+                'LIMITED OR BELOW AVERAGE': '#d0e3f0',  // Light blue
+                'TYPICAL OR AVERAGE': '#8fb6d0',        // Medium blue
+                'SCENIC OR ABOVE AVERAGE': '#5a7ebf',   // Dark blue
+                'EXCELLENT OR SUPERIOR': '#2d3a8c'      // Deep purple-blue
             },
             'EXT CONDITION': {
-                'Average': '#98A37D',
-                'Good': '#224428',
-                'Fair': '#B89A5D',
-                'Poor': '#8B4513',
-                'Excellent': '#1A3A1F',
-                'Very Good': '#224428'
+                'Poor': '#d0e3f0',       // Light blue
+                'Fair': '#8fb6d0',       // Medium blue
+                'Average': '#5a7ebf',    // Dark blue
+                'Good': '#2d3a8c',       // Deep purple-blue
+                'Very Good': '#1e2a5e',  // Darker purple-blue
+                'Excellent': '#0f1a3f'  // Darkest purple-blue
             },
             'SumOfACTUALVALUE': {
-                'Low': '#F5F5F5',        // Very light gray - almost invisible
-                'Medium': '#B89A5D',     // Gold/brown
-                'High': '#224428',       // Dark forest green
-                'Very High': '#FF6B6B'   // Bright red - very distinguishable!
+                'Low': '#d0e3f0',        // Light blue
+                'Medium': '#8fb6d0',     // Medium blue
+                'High': '#5a7ebf',       // Dark blue
+                'Very High': '#2d3a8c'   // Deep purple-blue
             },
             'TOTALACTUA': { // Parcel data values
-                'Low': '#F5F5F5',        // Very light gray - almost invisible
-                'Medium': '#B89A5D',     // Gold/brown
-                'High': '#224428',       // Dark forest green
-                'Very High': '#FF6B6B'   // Bright red - very distinguishable!
+                'Low': '#d0e3f0',        // Light blue
+                'Medium': '#8fb6d0',     // Medium blue
+                'High': '#5a7ebf',       // Dark blue
+                'Very High': '#2d3a8c'   // Deep purple-blue
             }
         };
         
